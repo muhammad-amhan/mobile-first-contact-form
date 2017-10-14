@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!---->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!---->
+        <title>Contact Form</title>
+        <!---->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!---->
+        <div class="container">
+            <!---->
+            <h1 class="brand"><span>Contact </span> From</h1>
+            <!---->
+            <div class="wrapper animated bounceInLeft">
+                <!---->
+                <div class="company-info">
+                    <h3> Web Design </h3>
+                    <ul>
+                        <li><i class="fa map fa-map-marker fa-fw"></i> 11 something street </li>
+                        <li><i class="fa phone fa-phone fa-fw>"></i> (000) 000-0000 </li>
+                        <li><i class="fa mail fa-envelope fa-fw"></i> comapny@text.com </li>
+                    </ul>
+                </div>
+                <!---->
+                <div class="contact">
+                    <h3> Email Us </h3>
+                    <!---->
+                    <form id="contactForm" action="" method="" autocomplete="off">
+                        <div>
+                            <label>Name</label>
+                            <span><input id="name" type="text" name="name" required></span>
+                        </div>
+                        <div>
+                            <label>Company (Optional)</label>
+                            <span><input id="company" type="text" name="comapny"></span>
+                        </div>
+                        <div>
+                            <label>Email Address</label>
+                            <span><input id="email" type="email" name="email" required></span>
+                        </div>
+                        <div>
+                            <label>Phone Number</label>
+                            <span><input id="phone" type="text" name="phone" required></span>
+                        </div>
+                        <div class="full">
+                            <label>Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="full">
+                            <button type="submit" name="submit">Submit</button>
+                        </div>
+                    </form>
+
+                    <!---->
+                    <div class="alert">
+                        <p>Sent! Thank you for your message...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---->
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+        <script src="js/connection.js"></script>
+    </body>
+</html>
